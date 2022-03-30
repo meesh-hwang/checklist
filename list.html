@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CCWZRXT8N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-212931503-1');
+      gtag('config', 'G-7CCWZRXT8N');
+    </script>
+</head>
+<body>
+    <main>
+        
+        <!-- Form -->
+        <form class="list-form">
+            <p class="alert"></p>
+                <h1 class="app-title" contenteditable="true">✏️ Name your list...<span class="blinking-cursor">|</span></h1>
+
+                <div class="form-control">
+                    <input type="text" id="list-input" placeholder="e.g. milk">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            
+        </form>
+
+        <!-- List -->
+        <div class="list-container">
+            <div class="list"></div>
+            <!-- Clear Button -->
+            <button type="button" class="clear-btn">Clear Items</button>
+        </div>
+
+    </main>
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
